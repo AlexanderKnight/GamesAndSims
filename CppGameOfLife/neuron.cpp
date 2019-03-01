@@ -1,9 +1,27 @@
 
 #include "gol.h"
 
-Neuron::Neuron(double a)
+Neuron::Neuron(double a, Neuron inputs, double connections)
 {
 	act = a;
+	inputs = inputs;
+	conn = connections;
+}
+
+
+void Neuron::setActivation(double a)
+{
+	act = a;
+}
+
+void setInputs(Neuron inputs)
+{
+	inputs = inputs;
+}
+
+void setConnections(double connections)
+{
+	conn = connections;
 }
 
 double Neuron::getActivation(void)
@@ -11,8 +29,13 @@ double Neuron::getActivation(void)
 	return act;
 }
 
-void Neuron::setActivation(double a)
+Neuron Neuron::getInputs(void)
 {
-	act = a;
+	return inputs;
+}
+
+double Neuron::getConnections(void)
+{
+	return conn;
 }
 
