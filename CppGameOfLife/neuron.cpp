@@ -8,6 +8,13 @@ Neuron::Neuron(double a, Neuron inputs, double connections)
 	conn = connections;
 }
 
+Neuron::Neuron(void)
+{
+	act = 0.;
+	inputs = {};
+	conn = {};
+}
+
 
 void Neuron::setActivation(double a)
 {

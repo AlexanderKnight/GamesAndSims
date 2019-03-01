@@ -7,6 +7,7 @@
 class Grid
 {
 	public:
+
 		void setPos(int x, int y);
 		int getPos(int x, int y);
 		int getLength();
